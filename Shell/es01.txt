@@ -1,0 +1,18 @@
+-  mkdir Verifica   
+	- cd Verifica/
+	-  mkdir Esercizio1
+	- cd Esercizio1/
+	- mkdir Informatica
+	-  mkdir Eserc
+	- cd Informatica/
+	- mv /home/tommaso/Verifica/Esercizio1/Eserc/ /home/tommaso/Verifica/Esercizio1/EsShell
+	- cp /home/tommaso/Verifica/Esercizio1/EsShell/ /home/tommaso/Verifica/Esercizio1/Informatica/ -r
+	- rmdir /home/tommaso/Verifica/Esercizio1/EsShell/
+	- touch /home/tommaso/Verifica/Esercizio1/Informatica/EsShell/README.txt
+	- nano /home/tommaso/Verifica/Esercizio1/Informatica/EsShell/README.txt
+	- scrivere Esercizi di Bash e salvare
+	- echo "Parte 1,Introduzione alla Shell" >> EsShell/README.txt
+	- Printa a schermo le prime 10 righe
+	- head EsShell/README.txt -n1 >> EsShell/TITOLO.txt
+	- Cd .. 
+	- Cd ..
