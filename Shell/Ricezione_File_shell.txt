@@ -1,7 +1,32 @@
 -creare un file di testo "prova.txt"
 
-terminale 1:							terminale 2:
+-v: visualizza dati utili per comprendere l'output,
+-l richiede la modalità ascolto
+-p specifica il numero della porta (5000 in questo caso)
+
+il comando nc(ncat) invia il file solamente al primo utente che si connette, poi interrompe la connessione
+
+usare: -w 50	 per mettere un timer da 50 secondi e tenere aperta la comunicazione 
+
+
+
+
+
 Server-->client
-	-verificare il contenuto del file prova:
-		cat prova.txt
-	
+terminale 1(server):					terminale 2(client):
+-verificare il contenuto del file prova:
+	cat prova.txt
+-reindirizzare contenuto file con pipe:
+	cat prova.txt | nc -v -l -p 5000
+							-digitare il comando per conettersi al server:
+								nc localhost 5000
+
+
+
+
+Client-->Server
+terminale 1(server):					terminale 2(client):
+	-nc -v -l -p 5000 > file.txt
+							-cat prova.txt | nc localhost 5000
+	-Ctrl-c(chiudo server)
+	cat file.txt //verifica il contenuto del file
