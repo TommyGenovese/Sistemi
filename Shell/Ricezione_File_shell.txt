@@ -1,0 +1,7 @@
+-creare un file di testo "prova.txt"
+
+terminale 1:							terminale 2:
+Server-->client
+	-verificare il contenuto del file prova:
+		cat prova.txt
+	
