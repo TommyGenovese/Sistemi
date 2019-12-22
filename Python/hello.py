@@ -39,6 +39,21 @@ l.reverse()     #inverte tutti gli elementi della lista
 l.copy()
 
 
+#DIZIONARI O ARRAY ASSOCIATIVI
+
+d= {1: "Mario Rossi", 2: "John Doe"}   #i numeri si chiamano CHIAVI e i nomi VALORI
+        #i VALORI possono essere un qualsiasi tipo di oggetto (strunghe, interi o addirittura funzioni)
+        #le CHIAVI possono essere solamente oggetti esciabili (deve essere univoca)
+
+d[1]    #ritorna Mario Rossi
+d[3] = "Luigi Verdi"    #aggiunge il valore Luigi .. alla chiave 3
+
+
+
+
+
+
+
 
 
 
