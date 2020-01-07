@@ -7,4 +7,4 @@ print("Your first variable is:", first)
 print("Your second variable is:", second)
 print("Your third variable is:", third) 
 
-#scrivere:    py es2.py first second   per eseguire
+#scrivere:    py es2.py first second third   per eseguire
