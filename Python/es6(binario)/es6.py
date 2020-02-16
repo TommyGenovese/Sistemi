@@ -1,22 +1,23 @@
-import ipaddress
+import subprocess
 
-network = ipaddress.ip_network("192.168.1.0/24")
-hosts = list(network.hosts())
+ipaddress = input("inserisci l'indirizzo IP: ")
+mask = int(input("inserisci la mask: "))
 
-subnets = {"start_address": str(list(subnet.hosts())[0]),"end_address": str(list(subnet.hosts())[-1])}
+ipaddress_splitted = [int(i) for i in ipaddress.split(".")]         #splitta la stringa e crea una lista di 4 interi
 
-print(subnets)
+ipaddress_bin = 0
+for e, group in enumerate(ipaddress_splitted):                      #enumerate cicla sia sull'elemento della lista(e) che sull'indice(group)
+    ipaddress_bin = ipaddress_bin + group*(2**(((3-e)*8)))          #in "ipaddress_bin" ci finirà la conversione dell' IP (tutto) in binario(da decimale a binario)
 
-hosts = list(network.hosts())
-subnets = [{"start_address": str(subnet[0]), "end_address": str(subnet[-1])}
-
-for subnet in (hosts[:len(hosts)//2], hosts[len(hosts)//2:])]
-print(subnets)
-
-
-
-
-
-
-
-    
+ipaddress_host = ipaddress_bin                                      #
+for c in range(1,2**(32-mask)-1):                                   #aggiungo uno a quanti sono gli host
+    ipaddress_host = ipaddress_host + 1                                 
+    l = '.'.join([str(int(bin(ipaddress_host)[i:i+8],2)) for i in range(2,34,8)])   #"bin(ipaddress_host)" :converte in binario, prendo i caratteri della stringa da i a i+8
+    print(l)                                                                        # da 2(i primi due non sono dell'indirizzo) a 34.
+                                                                                    #str è una stringa
+                                                                                    
+p = subprocess.Popen(['ping', ipaddress], stdout=subprocess.PIPE)
+ping = p.communicate()
+print(ping[0].decode())
+      
+#il metodo join viene usato per unire i componenti della lista tramite il carattere selezionato:   ';'.join(lista) = 192;168;10;0
