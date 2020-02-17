@@ -20,7 +20,8 @@ ipaddress_host = ipaddress_bin                                      #
 print("\n\nping dell'indirizzo ip in corso...")
 p = subprocess.Popen(['ping', ipaddress], stdout=subprocess.PIPE)
 ping = p.communicate()
-print(ping[0].decode())
+if(p.communicate == NULL):               #cerco cosa returna la funzione subprocesso.Popen.communicate
+    print(ping[0].decode())
 
 
       
