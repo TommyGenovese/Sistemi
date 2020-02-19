@@ -4,10 +4,12 @@
 nodi= input("inserisci il numero di nodi: ")
 for i in nodi:
     viciniTot = input(f"inserisci i vicini del nodo {i+1} (separati con una vircola)")
-    vic[i]=viciniTot.split(",")
-m = [[2],[1,3],[2]]
+    viciniTot = viciniTot.split(",")
+    
+
+
 for i in nodi:
-    print(f"il nodo {i+1} ha {len(vic[i])} nodi")
+    print(f"il nodo {i+1} ha {len(viciniTot)} nodi")
     
 
 
