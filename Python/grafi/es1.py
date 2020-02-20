@@ -1,28 +1,15 @@
 #creare un programma per i nodi
 
+nodi = int(input("Inserire numero di nodi: "))
 
-nodi= input("inserisci il numero di nodi: ")
-for i in nodi:
-    viciniTot = input(f"inserisci i vicini del nodo {i+1} (separati con una vircola)")
-    viciniTot = viciniTot.split(",")
-    
+matrix = []
 
+for i in range(0,nodi):
+    neighbor = [int(n) for n in input(f"Inserisci i nodi adiacenti a {i}: ").split(",")]
+    colonne = [0 for n in range(0,nodi)]
+    for n in neighbor:
+        if(n != -1):
+            colonne[n] = 1
+    matrix.append(colonne)
 
-for i in nodi:
-    print(f"il nodo {i+1} ha {len(viciniTot)} nodi")
-    
-
-
-
-    
-
-
-
-
-#mat = [[0,1,1], [1,0,0], [0,1,0]]
-#for k in 0:3:
-#    print(f"il nodo numero{k+1} è in collegamento con i nodi numero:")
-#    for i in :
-#        if(mat[1][i]==1):
-#            print(i)
-
+print(matrix)
