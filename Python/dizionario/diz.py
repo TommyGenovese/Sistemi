@@ -7,4 +7,3 @@ def user2adj(m):
 
 def adj2dict(m)
 
-dxav
