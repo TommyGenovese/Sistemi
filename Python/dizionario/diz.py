@@ -26,8 +26,8 @@ def user2dictPes():
 #main
 mat= [[2],[1,3]]
 diz=adj2dict(mat)
-#print(f"\nfStampa del dizionario ottenuto da adj2dict:\n{diz}\n")
+print(f"\nfStampa del dizionario ottenuto da adj2dict:\n{diz}\n")
 mat = dict2adj(diz)
-#print(f"ora stampiamo la matrice ottenuta da dict2adj: \n{mat}\n")
+print(f"ora stampiamo la matrice ottenuta da dict2adj: \n{mat}\n")
 
 print(user2dictPes())
