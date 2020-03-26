@@ -23,8 +23,7 @@ def Bool2Numb(grid):
 def adj2dict(mat):
     dictionary = {}
     matNeigh = []
-    for i,c in enumerat
-    e:
+    for i,c in enumerate(dictionary):
         matNeigh = []
         for c in i:
             if (mat[i][c] > 0):
