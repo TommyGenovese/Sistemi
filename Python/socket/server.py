@@ -1,25 +1,29 @@
 import socket
-
-ip = 'localhost'
+IpAddress = 'localhost'
 port = 5004
 
 srv = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-srv.bind((ip,port))
+srv.bind((IpAddress,port))
 
 while(True):
-    
-    #ricezione del messaggio
-    raw_data = srv.recv(4096)
-    if str(raw_data,encoding="ascii") == "$stop":
-        break
-    print('msg del client:' + str(raw_data))
-
-
     #invio del messaggio
-    msg = input("inserisci il messaggio da inviare:")
-    srv.sendto(msg.encode(),(ip,port))
-    if str(msg) == "$stop":
+    #msg = input("inserisci il messaggio da inviare:")
+    #srv.sendto(msg.encode(),(IpAddress,port))
+    #if str(msg) == "$stop":
+    #    break
+
+    #ricezione del messaggio
+    data, address = srv.recvfrom(8036)
+    print(f"msg from client: {data}")
+
+    #si può interrompere il collegamento digitando '$stop'
+    if str(data,encoding="ascii") == "$stop":
         break
+    
+    #invio messaggio di conferma
+    if data:
+        sent = srv.sendto(data, address)
+        print (f"sent {data} bytes back to {IpAddress}")
 
 srv.close()
