@@ -1,14 +1,7 @@
-"""
-documento il programma
-bla bla bla
-"""
+import turtle
 
-lista = [1,2,3]
+sally = turtle.Turtle()
+sally.forward(10)
 
-for i in lista:
-    print(i)
-
-print(lista)
-
-
+turtle.done()
 
