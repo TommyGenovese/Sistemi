@@ -3,7 +3,7 @@ import socket
 IpAddress = 'localhost'
 port = 5004
 
-cli = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+cli = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 cli.connect(IpAddress, port)
 
 while(True):
