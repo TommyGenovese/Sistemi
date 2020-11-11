@@ -1,23 +1,18 @@
 import socket
 
-IpAddress = 'localhost'
-port = 5004
+IpAddress = '192.168.88.106'
+port = 6000
 
 cli = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-cli.connect(IpAddress, port)
+cli.connect((IpAddress, port))
 
 while(True):
 
     #invio del messaggio
     msg = input("testo del messaggio:")
+    msg = msg.encode()
     cli.send(msg)
 
-    #si può interrompere il collegamento digitando '$stop'
-    #if str(msg) == "$stop":
-    #    break
-    if str(msg) == "$stop":
-            break
-    
     #ricezione messaggio di conferma
     data = cli.recv(8036)
     print(data.decode())

@@ -1,7 +1,7 @@
 import socket
 
-IpAddress = 'localhost'
-port = 5004
+IpAddress = '192.168.88.89'
+port = 6000
 
 cli = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 

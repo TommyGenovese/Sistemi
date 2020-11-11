@@ -31,7 +31,7 @@ def muovi(i, wasd, PxGr, addr):
 
 #def main():
 IpAddress = '0.0.0.0'
-port = 5004
+port = 8000
 
 srv = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 

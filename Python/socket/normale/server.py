@@ -1,6 +1,6 @@
 import socket
-IpAddress = 'localhost'
-port = 5004
+IpAddress = '192.168.88.89' #0.0.0.0
+port = 6000
 
 srv = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
@@ -15,6 +15,7 @@ while(True):
 
     #ricezione del messaggio
     data, address = srv.recvfrom(8036)
+    data= data.decode()
     print(f"msg from client: {data}")
     
     #invio messaggio di conferma
@@ -26,7 +27,5 @@ while(True):
 
     if(data.decode()[1:] == "$stop"): 
         break
-
-
 
 srv.close()
