@@ -1,0 +1,34 @@
+BELL: Escludete i gruppi! Escludeteli!
+JACK: Dobbiamo spostarci!
+ROSE: Non posso!
+JACK: Dammi la mano, ti aiuto a scavalcare.
+ROSE: No!
+JACK: Coraggio, dammi la mano! Ti ho presa. Non ti lascerò andare. Forza, ti tengo!
+ROSE: Che sta succedendo, Jack?
+JACK: Non lo so. Non lo so. Coraggio!
+ROSE: Oh, mio Dio!
+JACK: Tieniti!
+JACK: Ci siamo!
+ROSE: Oh, mio Dio! Oh, mio Dio, Jack! Oh, Dio! Oh, Dio! Oh, Dio!
+JACK: Tieniti forte!
+ROSE: Oh, Dio!
+JACK: La nave ci trascinerà giù! Non appena te lo dico io, trattieni più aria che puoi! Spingi verso l'alto! Non lasciare la mia mano! Ce la faremo, Rose! Fidati!
+ROSE: Mi fido!
+JACK: Pronta? Pronta? Adesso!
+_
+ROSE: Jack! Jack! Jack! Jack! Jack! Jack! Jack! Jack! Jack! Jack!
+JACK: Rose! Lasciala! Lasciala! Rose!
+ROSE: Jack!
+JACK: Nuota, Rose! Devi nuotare! Continua a nuotare!
+ROSE: È gelida!
+JACK: Nuota, Rose! Forza! Coraggio! Continua a nuotare! Forza! Mettiti sopra! Mettiti sopra.
+NAUFRAGHI: Non lasciatemi qui! Aiuto!
+JACK: Forza, Rose.
+NAUFRAGHI: Aiutatemi! Vi prego! Aiuto!
+JACK: Tutto bene? Rimani tu lì. Rimani tu.
+ROSE: Va bene, Jack.
+NAUFRAGHI: Aiuto!
+JACK: Andrà tutto bene. Ce la caveremo.
+WILDE: Tornate alle scialuppe!
+JACK: Le scialuppe stanno tornando a prenderci. Tieni duro ancora per un po'. Si... si sono dovute allontanare per non essere risucchiate, ma adesso torneranno, torneranno.
+NAUFRAGO: Non lasciatemi qui! Aiutatemi!
