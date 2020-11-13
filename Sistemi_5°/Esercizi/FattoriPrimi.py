@@ -1,7 +1,7 @@
 #Author: Genovese Tommaso-
 #Date: 11/11/2020
 #es: Dato un numero, scomporlo in fattori primi.
-import math
+import math, time
 def num_primo(n):
     lista_num = []
     for k in range (2,int(math.sqrt(n) + 1)): #
@@ -14,20 +14,22 @@ def num_primo(n):
 
 #main
 
-n = int(input("inserisci il numero da scomporre: "))
+n = int(input("insert the number: "))
 if num_primo(n):
     print("Your number is already a prime number")
     print(n)
 else:
-    ListaFatt = []    
+    ListFact = []
     current = n
     for i in range(2,int(n/2)+1):
         #j = 1
         j=1
         while j==1:
             if (current % i) == 0:
-                ListaFatt.append(i)
+                ListFact.append(i)
                 current = current / i
             else:
                 j = 0
-    print(f"il numero è scomponibile in questi fattori: {ListaFatt}")
+    print(f"The number has been broken down: {ListaFatt}")
+
+time.sleep(500)
