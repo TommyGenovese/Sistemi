@@ -4,7 +4,6 @@ port = 5004
 
 srv = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-srv.listen()
 cn, address = srv.accept()
 print("Connected to", address)
 

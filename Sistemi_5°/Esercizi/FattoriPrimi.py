@@ -33,3 +33,6 @@ else:
     print(f"The number has been broken down: {ListaFatt}")
 
 time.sleep(500)
+
+
+
